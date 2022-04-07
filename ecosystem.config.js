@@ -2,8 +2,9 @@ module.exports = {
     apps: [
         {
             name: "Search Suggestions",
-            script: "node",
-            args: "index.js",
+            script : "./index.js",
+            // script: "node",
+            // args: "index.js",
             instances: 1,
             autorestart: true,
             watch: false,
