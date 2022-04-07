@@ -1,0 +1,31 @@
+{
+    "name": "search-suggestions",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "pm2 start ecosystem.config.js --env production",
+        "start": "npm run serve",
+        "serve": "cross-env NODE_ENV=production node index.js",
+        "dev": "cross-env NODE_ENV=development node index.js",
+        "test": "cross-env NODE_ENV=development node index.js",
+        "reinstall": "reinstall"
+    },
+    "author": {
+        "name": "Pepijn van den Broek",
+        "email": "pepijn@vdbroek.dev",
+        "url": "https://vdbroek.dev"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.26.1",
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3"
+    },
+    "devDependencies": {
+        "npm-reinstall": "^3.1.0"
+    }
+}
